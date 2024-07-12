@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Upload Files</title>
+</head>
+<body>
+    <h1>Upload PDF Files</h1>
+    <form method="post" enctype="multipart/form-data" action="/upload">
+        <label for="uploadDir">Upload Directory:</label>
+        <input type="text" id="uploadDir" name="uploadDir" placeholder="Enter directory path" required/>
+        <br>
+        <input type="file" name="files" multiple required/>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

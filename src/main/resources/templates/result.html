@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Upload Results</title>
+</head>
+<body>
+    <h1>Uploaded File Paths</h1>
+    <ul>
+        <li th:each="filePath : ${filePaths}" th:text="${filePath}"></li>
+    </ul>
+    <a href="/">Upload More Files</a>
+</body>
+</html>
